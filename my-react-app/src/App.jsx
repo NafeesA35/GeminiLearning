@@ -1,8 +1,13 @@
+import {useState} from 'react';
+
 function App() {
+  const [count, setCount] = useState(0);
+
   return (
     <>
-      <h1>This is my first custom component!</h1>
-      <p>This is so cool!</p>
+      <h1>This is an interactive component</h1>
+      <p>You have clicked at the button {count} times</p>
+      <button> click me ! </button>
     </>
   );
 }
